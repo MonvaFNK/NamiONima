@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f1c4a31.css",
-    "main.js": "/static/js/main.eea3fef5.js",
+    "main.css": "/static/css/main.77f0e370.css",
+    "main.js": "/static/js/main.1ce4eecb.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/ig2.png": "/static/media/ig2.a3c24c87814f9b670ef4.png",
+    "static/media/ig1.png": "/static/media/ig1.7440c8eae5f0cac94bc2.png",
+    "static/media/Marca.png": "/static/media/Marca.8e6dddab28ae2fe821d9.png",
+    "static/media/placeholder.png": "/static/media/placeholder.0488384b567dfc1ef8b6.png",
+    "static/media/LeagueSpartan-VariableFont_wght.ttf": "/static/media/LeagueSpartan-VariableFont_wght.596f54f303afb90cbfb0.ttf",
+    "static/media/background.svg": "/static/media/background.514227b282f7387a40b1.svg",
     "index.html": "/index.html",
-    "main.2f1c4a31.css.map": "/static/css/main.2f1c4a31.css.map",
-    "main.eea3fef5.js.map": "/static/js/main.eea3fef5.js.map",
+    "static/media/wave.svg": "/static/media/wave.8d36c91464d30ed636c9.svg",
+    "main.77f0e370.css.map": "/static/css/main.77f0e370.css.map",
+    "main.1ce4eecb.js.map": "/static/js/main.1ce4eecb.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f1c4a31.css",
-    "static/js/main.eea3fef5.js"
+    "static/css/main.77f0e370.css",
+    "static/js/main.1ce4eecb.js"
   ]
 }
