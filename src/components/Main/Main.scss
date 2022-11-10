@@ -1,0 +1,283 @@
+.maincontainer {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &__imagenes {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &--texto {
+            background: rgb(63, 94, 251);
+            background: -moz-linear-gradient(0deg, rgba(63, 94, 251, 0) 75%, rgba(255, 255, 255, 0.3001401244091386) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(63, 94, 251, 0) 75%, rgba(255, 255, 255, 0.3001401244091386) 100%);
+            background: linear-gradient(0deg, rgba(63, 94, 251, 0) 75%, rgba(255, 255, 255, 0.3001401244091386) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#ffffff", GradientType=1);
+            /*             background-image: radial-gradient( circle 122px at -0.2% -11.4%,  rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100.3% ); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            padding-top: 4rem;
+        }
+
+        &--plan {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &--instagram {
+            gap: 3rem;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            height: 40%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        &--titular2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            padding-top: 4rem;
+        }
+    }
+
+    &__texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        margin-top: 2rem;
+
+        &--marca {
+            width: 3rem;
+            height: 3rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+
+        &--titular {
+            font-family: 'League Spartan';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &--titular::before {
+            content: 'NAMI';
+            font-size: 2.5rem;
+            color: #00FFFF;
+            font-weight: 600;
+        }
+
+        &--titular::after {
+            content: 'NIMA';
+            font-size: 2.5rem;
+            color: #ED1E79;
+            font-weight: 600;
+        }
+
+        &--parrafo {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            color: white;
+        }
+    }
+
+    .maincontainer__section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: url("./Utilities/background.svg");
+        background-size: cover;
+        background-position-y: 100%;
+        overflow: hidden;
+    }
+
+    .cardbody {
+        border-radius: 1.5rem;
+        height: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardbody:hover {
+        z-index: 2;
+        animation-name: none;
+    }
+
+    .bounce-1 {
+
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes bounce-1 {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .bounce-2 {
+        animation-name: bounce-2;
+        animation-timing-function: linear;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce-2 {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .bounce-3 {
+        animation-name: bounce-3;
+        animation-timing-function: linear;
+        animation-duration: 2.8s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce-3 {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .cardcolor {
+        background-color: rgba(248, 248, 248, 0.336);
+    }
+
+    .removebg {
+        background-color: rgba(255, 255, 255, 0);
+
+    }
+
+    .removeborder {
+        border: none;
+    }
+
+    .textcenter {
+        text-align: center;
+    }
+
+    .wave {
+        opacity: 50%;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background-image: url("./Utilities/wave.svg");
+        background-repeat: no-repeat;
+        top: 85%;
+        z-index: 1;
+        left: 0;
+    }
+
+    .portfolio {
+        background: rgb(237, 30, 121);
+        background: -moz-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+        background: linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed1e79", endColorstr="#00ffff", GradientType=1);
+        width: 100%;
+
+        &__imagen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 2rem;
+            gap: 1rem;
+            margin-bottom: 40rem;
+
+            &--1 {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .adjust-image {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1rem;
+
+    }
+
+    .especiales {
+        width: 100%;
+        background-color: #ED1E79;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__contenedor {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            gap: 1rem;
+        }
+    }
+
+
+}

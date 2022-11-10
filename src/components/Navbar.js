@@ -1,26 +1,32 @@
-import './Cart/CartWidget';
-import CartWidget from './Cart/CartWidget';
-import { Link } from 'react-router-dom';
+import MenuHamburguesa from "./MenuHamburguesa/MenuHamburguesa";
 
 function Navbar() {
+    let openCart = true
+    const handleOpenCart = () => {
+        if(openCart === true){
+        let item = document.querySelector('.cart__container');
+        item.style.display = 'flex';
+        openCart = false;
+        } else {
+            let item = document.querySelector('.cart__container');
+            item.style.display = 'none';
+            openCart = true;
+        }
+    }
+    return (
+        <div class="pos-f-t sticky">
+            <nav class="navbar navbar-dark bg-dark navbar__container">
+                <div className="navbar__container--logo">
+                    <h2 className="navbar__titulo">Nami</h2><div className="navbar__titulo--o1"></div><div className="navbar__titulo--o2"></div> <h2 className="navbar__titulo2"> Nima</h2>
+                </div>
+                <button class="navbar-toggler navbar__button" type="button" onClick={handleOpenCart}>
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <MenuHamburguesa />
+            </nav>
 
-
-
-return (
-    <header>
-        <div className="navbar">
-            <h1 className='navbar__titulo'> FNKee Store</h1>
-            <div className='navbar__contenedor'>
-                <ul className='navbar__contenedor--items'> 
-                    <Link as={Link} to='/'><div className='navbar__contenedor--items1'><li>Home</li></div></Link>
-                    <Link as={Link} to='/category/Indumentaria'><div className='navbar__contenedor--items2'><li>Indumentaria</li></div></Link>
-                    <Link as={Link} to='/category/Miscelaneo'><div className='navbar__contenedor--items3'><li>Miscelaneo</li></div></Link>
-                </ul>
-            </div>
-            <CartWidget />
         </div>
-    </header>
-);
+    );
 }
 
 export default Navbar;
