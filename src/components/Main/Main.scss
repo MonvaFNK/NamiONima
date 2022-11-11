@@ -136,7 +136,7 @@
     .bounce-1 {
 
         animation-name: bounce-1;
-        animation-timing-function: linear;
+        animation-timing-function: cubic;
         animation-duration: 2s;
         animation-iteration-count: infinite;
 
@@ -158,7 +158,7 @@
 
     .bounce-2 {
         animation-name: bounce-2;
-        animation-timing-function: linear;
+        animation-timing-function: cubic;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
     }
@@ -179,7 +179,7 @@
 
     .bounce-3 {
         animation-name: bounce-3;
-        animation-timing-function: linear;  
+        animation-timing-function: cubic;  
         animation-duration: 2.8s;
         animation-iteration-count: infinite;
     }
