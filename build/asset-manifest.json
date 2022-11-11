@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.77f0e370.css",
-    "main.js": "/static/js/main.1ce4eecb.js",
+    "main.css": "/static/css/main.3f787373.css",
+    "main.js": "/static/js/main.d26c7a3f.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/ig2.png": "/static/media/ig2.a3c24c87814f9b670ef4.png",
-    "static/media/ig1.png": "/static/media/ig1.7440c8eae5f0cac94bc2.png",
+    "static/media/portfolio_marca3_zapas3.png": "/static/media/portfolio_marca3_zapas3.ebdfe906adc1ec0bf067.png",
+    "static/media/portfolio_marca2_hiit.png": "/static/media/portfolio_marca2_hiit.ca9d655a07e977483c76.png",
+    "static/media/portfolio_marca4_renovamos.png": "/static/media/portfolio_marca4_renovamos.a0dc2d64632cb2447fd6.png",
+    "static/media/portfolio_marca3_zapas.png": "/static/media/portfolio_marca3_zapas.b9413017c27fcce2e59d.png",
+    "static/media/portfolio_marca1_misma.png": "/static/media/portfolio_marca1_misma.77005aac27ba9e38a466.png",
+    "static/media/portfolio_marca2_nutricionista.png": "/static/media/portfolio_marca2_nutricionista.d741056fe7aaba581e57.png",
+    "static/media/portfolio_marca4_neon.png": "/static/media/portfolio_marca4_neon.ddd7dc3b39a483aa990a.png",
+    "static/media/portfolio_marca4_bombilla.png": "/static/media/portfolio_marca4_bombilla.83904db89cb8cfc8e9b9.png",
+    "static/media/portfolio_marca2_fraymuth.png": "/static/media/portfolio_marca2_fraymuth.88b20f7b646c083b2e3d.png",
+    "static/media/portfolio_marca1_feliz_primavera.png": "/static/media/portfolio_marca1_feliz_primavera.6b012f0a02362da200f7.png",
+    "static/media/portfolio_marca1_calma.png": "/static/media/portfolio_marca1_calma.1716ba6675f2f30f7259.png",
+    "static/media/portfolio_marca3_zapas2.jpg": "/static/media/portfolio_marca3_zapas2.13c5a3cdd7b1fb1b3336.jpg",
     "static/media/Marca.png": "/static/media/Marca.8e6dddab28ae2fe821d9.png",
     "static/media/placeholder.png": "/static/media/placeholder.0488384b567dfc1ef8b6.png",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/static/media/LeagueSpartan-VariableFont_wght.596f54f303afb90cbfb0.ttf",
     "static/media/background.svg": "/static/media/background.514227b282f7387a40b1.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.8d36c91464d30ed636c9.svg",
-    "main.77f0e370.css.map": "/static/css/main.77f0e370.css.map",
-    "main.1ce4eecb.js.map": "/static/js/main.1ce4eecb.js.map",
+    "main.3f787373.css.map": "/static/css/main.3f787373.css.map",
+    "main.d26c7a3f.js.map": "/static/js/main.d26c7a3f.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77f0e370.css",
-    "static/js/main.1ce4eecb.js"
+    "static/css/main.3f787373.css",
+    "static/js/main.d26c7a3f.js"
   ]
 }
