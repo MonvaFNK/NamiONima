@@ -1,0 +1,212 @@
+:root{
+    --marca1: pink;
+    --marca1-lighter: rgb(255, 236, 239);
+    --marca1-fade: rgba(255, 192, 203, 0.5);
+    --marca2: rgba(255, 255, 0, 0.685);
+    --marca2-lighter: rgba(255, 255, 166, 0.685); 
+    --marca2-fade: rgba(255, 255, 0, 0.295);
+    --marca3: rgba(0, 0, 255, 0.822);
+    --marca3-lighter: rgb(106, 106, 248);
+    --marca3-fade: rgba(0, 0, 255, 0.26);
+    --marca4: rgb(128, 0, 128);
+    --marca4-lighter: rgb(182, 83, 182);
+    --marca4-fade: rgba(128, 0, 128, 0.336);
+    --card-fade-global:rgba(0, 0, 0, 0.301);
+}
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6rem;
+    grid-row-gap: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    &--flex {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+/* Marca1 */
+    &--textcontainer1 {
+        width: 100%;
+        height: 100%;
+        background-color: var(--card-fade-global);
+        display: none;
+        position: absolute;
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    &--container1 {
+        position: relative;
+        border-radius: 1rem;
+        transition: all .5s ease-in-out;
+    }
+    &--container1:hover  &--textcontainer1 {
+        display: flex;
+
+
+    }
+    &--container1:hover {
+        transform: scale(1.1);
+        z-index: 5;
+        box-shadow: 0 0 .2rem var(--marca1-lighter),
+        0 0 .2rem var(--marca1),
+        0 0 2rem var(--marca1),
+        0 0 0.8rem var(--marca1),
+        0 0 2.8rem var(--marca1),
+        inset 0 0 1.3rem var(--marca1); 
+    }
+    
+/* Marca2 */
+&--textcontainer2 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-fade-global);
+    display: none;
+    position: absolute;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+&--container2 {
+    position: relative;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+&--container2:hover  &--textcontainer2 {
+    display: flex;
+}
+&--container2:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0 0 .2rem var(--marca2-lighter),
+    0 0 .2rem var(--marca2),
+    0 0 2rem var(--marca2),
+    0 0 0.8rem var(--marca2),
+    0 0 2.8rem var(--marca2),
+    inset 0 0 1.3rem var(--marca2); 
+}
+/* Marca3 */
+&--textcontainer3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-fade-global);
+    display: none;
+    position: absolute;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+&--container3 {
+    position: relative;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+&--container3:hover  &--textcontainer3{
+    display: flex;
+
+
+}
+&--container3:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0 0 .2rem var(--marca3-lighter),
+    0 0 .2rem var(--marca3),
+    0 0 2rem var(--marca3),
+    0 0 0.8rem var(--marca3),
+    0 0 2.8rem var(--marca3),
+    inset 0 0 1.3rem var(--marca3); 
+}
+/* Marca4 */
+&--textcontainer4 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-fade-global);
+    display: none;
+    position: absolute;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+&--container4 {
+    position: relative;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+&--container4:hover  &--textcontainer4 {
+    display: flex;
+
+}
+&--container4:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0 0 .2rem var(--marca4-lighter),
+    0 0 .2rem var(--marca4),
+    0 0 2rem var(--marca4),
+    0 0 0.8rem var(--marca4),
+    0 0 2.8rem var(--marca4),
+    inset 0 0 1.3rem var(--marca4); 
+}
+
+
+/* END */
+
+    &--texto {
+        text-align: center;
+        color: white;
+        line-height: 2rem;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-weight: 500;
+    }
+}
+
+.portfolio__grid--item1 {
+    grid-area: 1 / 1 / 4 / 2;
+    text-align: center;
+}
+
+.portfolio__grid--item2 {
+    grid-area: 1 / 2 / 4 / 3;
+    text-align: center;
+}
+
+.portfolio__grid--item3 {
+    grid-area: 1 / 3 / 4 / 4;
+    text-align: center;
+}
+
+.portfolio__grid--item4 {
+    grid-area: 1 / 4 / 4 / 5;
+    text-align: center;
+}
+
+
+/* Settings */
+.portfolio {
+    background: rgb(237, 30, 121);
+    background: -moz-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed1e79", endColorstr="#00ffff", GradientType=1);
+    width: 100%;
+
+}
+
+.adjust-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+
+}

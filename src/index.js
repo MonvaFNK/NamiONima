@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import './index.css';
-import "./stylesheets.js"
+import "./Stylesheets.js"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

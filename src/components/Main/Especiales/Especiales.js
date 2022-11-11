@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card';
-import placeholder from './Utilities/placeholder.png';
 import Button from 'react-bootstrap/Button';
+
+import placeholder from './Utilities/placeholder.png';
 
 
 function Especiales() {

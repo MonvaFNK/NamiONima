@@ -1,4 +1,5 @@
-import MenuHamburguesa from "./MenuHamburguesa/MenuHamburguesa";
+import MenuHamburguesa from "../MenuHamburguesa/MenuHamburguesa";
+import Marca from './Utilities/Marca.png'
 
 function Navbar() {
     let openCart = true
@@ -17,12 +18,13 @@ function Navbar() {
         <div class="pos-f-t sticky">
             <nav class="navbar navbar-dark bg-dark navbar__container">
                 <div className="navbar__container--logo">
-                    <h2 className="navbar__titulo">Nami</h2><div className="navbar__titulo--o1"></div><div className="navbar__titulo--o2"></div> <h2 className="navbar__titulo2"> Nima</h2>
+                    <img src={Marca} className='maincontainer__texto--marca' />
                 </div>
-                <button class="navbar-toggler navbar__button" type="button" onClick={handleOpenCart}>
+                {/* MENU HAMBURGUESA DESHABILITADO */}
+{/*                 <button class="navbar-toggler navbar__button" type="button" onClick={handleOpenCart}>
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <MenuHamburguesa />
+                <MenuHamburguesa /> */}
             </nav>
 
         </div>
