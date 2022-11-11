@@ -44,7 +44,7 @@ function Main() {
                         </ListGroup>
                         <Card.Body className='maincontainer__imagenes--button'>
                             <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848451e6a401845a769cd708c7"><Button variant="primary">Comprar</Button>{' '}</a>
-                            <Card.Text> 5500$</Card.Text>
+                            <Card.Text> 5500ARS</Card.Text>
                         </Card.Body>
                     </Card>
 
@@ -61,7 +61,7 @@ function Main() {
                         </ListGroup>
                         <Card.Body className='maincontainer__imagenes--button'>
                             <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848451e64801845a78014808d0"><Button variant="primary">Comprar</Button>{' '} </a>
-                            <Card.Text> 6000$</Card.Text>
+                            <Card.Text> 6000ARS</Card.Text>
                         </Card.Body>
                     </Card>
 
@@ -78,7 +78,7 @@ function Main() {
                         </ListGroup>
                         <Card.Body className='maincontainer__imagenes--button'>
                             <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084845a41c001845a7c6981001f"> <Button variant="primary">Comprar</Button>{' '}</a>
-                            <Card.Text> 8500$</Card.Text>
+                            <Card.Text> 8500ARS</Card.Text>
                         </Card.Body>
                     </Card>
                 </div>
