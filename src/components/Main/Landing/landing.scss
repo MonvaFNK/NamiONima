@@ -23,22 +23,6 @@
             padding-top: 4rem;
         }
 
-        &--plan {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        &--instagram {
-            gap: 3rem;
-            margin-top: 4rem;
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            height: 40%;
-            justify-content: center;
-            align-items: center;
-        }
-
         &--button {
             display: flex;
             flex-direction: row;
@@ -54,6 +38,7 @@
             color: rgb(0, 0, 0);
             padding-top: 4rem;
         }
+
     }
 
     &__texto {
@@ -72,22 +57,20 @@
         }
 
         &--titular {
-            font-family: 'League Spartan';
             display: flex;
             align-items: center;
+            user-select: none;
             justify-content: center;
             text-align: center;
         }
 
-        &--titular::before {
-            content: 'NAMI';
+        &--titular1 {
             font-size: 2.5rem;
             color: #00FFFF;
             font-weight: 600;
         }
 
-        &--titular::after {
-            content: 'NIMA';
+        &--titular2 {
             font-size: 2.5rem;
             color: #ED1E79;
             font-weight: 600;
@@ -97,6 +80,7 @@
             margin-left: 4rem;
             margin-right: 4rem;
             color: white;
+            text-align: center;
         }
     }
 
