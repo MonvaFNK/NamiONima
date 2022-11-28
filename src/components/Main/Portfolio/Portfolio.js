@@ -22,26 +22,16 @@ function Portfolio() {
                     <h3>Marca1</h3>
                     <div className="portfolio__grid--flex ">
                         <div className="portfolio__grid--container1">
-                            <div className="portfolio__grid--textcontainer1">
-                            </div>
-                            <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
-                            
                             <img className='adjust-image'
                                 src={portfolio_feliz_primavera}
                             />
                         </div>
                         <div className="portfolio__grid--container1">
-                            <div className="portfolio__grid--textcontainer1">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_misma}
                             />
                         </div>
                         <div className="portfolio__grid--container1">
-                            <div className="portfolio__grid--textcontainer1">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_calma}
                             />
@@ -54,25 +44,16 @@ function Portfolio() {
                     <h3>Marca2</h3>
                     <div className=" portfolio__grid--flex">
                         <div className="portfolio__grid--container2">
-                            <div className="portfolio__grid--textcontainer2">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_fraymuth}
                             />
                         </div>
                         <div className="portfolio__grid--container2">
-                            <div className="portfolio__grid--textcontainer2">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_hiit}
                             />
                         </div>
                         <div className="portfolio__grid--container2">
-                            <div className="portfolio__grid--textcontainer2">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_nutricionista}
                             />
@@ -85,25 +66,16 @@ function Portfolio() {
                     <h3>Marca3</h3>
                     <div className=" portfolio__grid--flex">
                         <div className="portfolio__grid--container3">
-                            <div className="portfolio__grid--textcontainer3">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_zapas}
                             />
                         </div>
                         <div className="portfolio__grid--container3">
-                            <div className="portfolio__grid--textcontainer3">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_zapas2}
                             />
                         </div>
                         <div className="portfolio__grid--container3">
-                            <div className="portfolio__grid--textcontainer3">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_zapas3}
                             />
@@ -116,25 +88,16 @@ function Portfolio() {
                     <h3>Marca4</h3>
                     <div className=" portfolio__grid--flex">
                         <div className="portfolio__grid--container4">
-                            <div className="portfolio__grid--textcontainer4">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_bombilla}
                             />
                         </div>
                         <div className="portfolio__grid--container4">
-                            <div className="portfolio__grid--textcontainer4">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_neon}
                             />
                         </div>
                         <div className="portfolio__grid--container4">
-                            <div className="portfolio__grid--textcontainer4">
-                            </div>
-                                <p className="portfolio__grid--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium sequi sint quam aspernatur ducimus.</p>
                             <img className='adjust-image'
                                 src={portfolio_renovamos}
                             />
