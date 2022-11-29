@@ -5,12 +5,9 @@ import Portfolio from './Portfolio/Portfolio.js';
 function Main() {
     return (
         <section className='maincontainer'>
-            {/* Navbar */}
             <Landing />
             <Portfolio />
             <Especiales />
-            {/* Otra */}
-            {/* Otra */}
         </section >
 
     )

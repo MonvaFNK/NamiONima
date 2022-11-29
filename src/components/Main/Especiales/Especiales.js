@@ -1,7 +1,7 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-
 import placeholder from './Utilities/placeholder.png';
+import PaginasWeb from'./Utilities/Especiales__PaginasWeb.png';
+import Videos from'./Utilities/Especiales__Videos.png';
+import Flyiers from './Utilities/Especiales__Flyiers.png';
 
 
 function Especiales() {
@@ -15,57 +15,32 @@ function Especiales() {
     return (
         <div className='especiales'>
             <h2> Especiales</h2>
-            <div className="especiales__contenedor">
+            <div className="especiales__seccion">
+                <div className="especiales__seccion--contenedor especialesImg1">
+                    <div className='especiales__seccion--cartas'>
+                        <img className='especiales__seccion--imagen' src={Flyiers} alt="" />
+                    </div>
+                    <div className='especiales__seccion--texto'>
+                        <p>Diseño y rediseño de marcas</p>
+                    </div>
 
-                <div className='especialesCardButton1' >
-                    <div className=''>
-                        <Card className="bg-dark text-white">
-
-                            <Card.Img src={placeholder} alt="Card image" />
-                            <Card.ImgOverlay>
-                            </Card.ImgOverlay>
-
-                        </Card>
-                        <div className="especiales__contenedor--imagen"></div>
+                </div>
+                <div className="especiales__seccion--contenedor especialesImg2">
+                    <div className='especiales__seccion--cartas'>
+                        <img className='especiales__seccion--imagen' src={PaginasWeb} alt="" />
+                    </div>
+                    <div className='especiales__seccion--texto'>
+                        <p>Creacion de paginas web</p>
                     </div>
                 </div>
-                <div>
-                    <Button id='especialesCardButton1' variant='primary' onClick={changeCard}>Hacer Algo</Button>
-                </div>
-
-                <div className=''>
-                    <div className=''>
-                        <Card className=" bg-dark text-white">
-                            <Card.Img src={placeholder} alt="Card image" />
-                            <Card.ImgOverlay>
-                            </Card.ImgOverlay>
-                        </Card>
-                        <div className="especiales__contenedor--imagen"></div>
+                <div className="especiales__seccion--contenedor especialesImg3">
+                    <div className='especiales__seccion--cartas'>
+                        <img className='especiales__seccion--imagen' src={Videos} alt="" />
+                    </div>
+                    <div className='especiales__seccion--texto'>
+                        <p>Edicion y creacion de videos</p>
                     </div>
                 </div>
-
-                <div className=''>
-                    <div className=''>
-                        <Card className="bg-dark text-white">
-                            <Card.Img src={placeholder} alt="Card image" />
-                            <Card.ImgOverlay>
-                            </Card.ImgOverlay>
-                        </Card>
-                        <div className=" especiales__contenedor--imagen"></div>
-                    </div>
-                </div>
-
-                <div className=''>
-                    <div className=''>
-                        <Card className="bg-dark text-white">
-                            <Card.Img src={placeholder} alt="Card image" />
-                            <Card.ImgOverlay>
-                            </Card.ImgOverlay>
-                        </Card>
-                        <div className="especiales__contenedor--imagen"></div>
-                    </div>
-                </div>
-
             </div>
         </div>
     )

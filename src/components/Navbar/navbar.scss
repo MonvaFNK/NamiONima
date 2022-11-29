@@ -8,19 +8,19 @@ a, a:visited, a:hover, a:active {
 .sticky{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 9;
 }
 .sticky + .maincontainer {
-    padding-top: 60px;
+    padding-top: 7.3vh;
 }
 .navbar{
     display: flex;
     flex-direction: row;
     background-color: beige;
-    width: 100%;
-    min-height: 60px;
-    max-height: 60px;
+    width: 100vw;
+    min-height: 10vh;
+    max-height: 10vh;
     align-items: center;
     &__texto--titular1{
         display: flex;
