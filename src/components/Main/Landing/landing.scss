@@ -8,7 +8,6 @@
         height: 100%;
         justify-content: space-evenly;
         align-items: center;
-
         &--texto {
             display: flex;
             flex-direction: column;
@@ -18,7 +17,6 @@
             width: 100vw;
             max-width: 100%;
         }
-
         &--titular2 {
             display: flex;
             flex-direction: column;
@@ -48,20 +46,16 @@
 
     &__texto {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         color: rgb(10, 0, 95);
         margin-top: 2rem;
-        
-
         &--marca {
             width: 8rem;
             height: 8rem;
             margin-left: .5rem;
             margin-right: .5rem;
         }
-
         &--titular {
             display: flex;
             align-items: center;
@@ -70,43 +64,62 @@
             text-align: center;
             margin-bottom: 10vh;
             margin-top: 10vh;
-
         }
-
         &--titular1 {
             font-size: 5rem;
             color: #00FFFF;
             font-weight: 600;
         }
-
         &--titular2 {
             font-size: 5rem;
             color: #ED1E79;
             font-weight: 600;
         }
-
         &--parrafo {
             display: flex;
-            margin-left: 8rem;
-            margin-right: 4rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             color: white;
-            text-align: center;
             font-size: 3rem;
-
+            &_oraciones1{
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px; 
+                width: 100%;
+                color: #00FFFF;
+            }
+            &_oraciones2{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1.7fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px; 
+                color: #ED1E79;
+            }
         }
-
     }
 }
-
 .Typewriter {
     display: flex;
     flex-direction: right;
     max-width: fit-content;
     font-size: 3rem;
-    min-width: 15rem;
+    
 }
-
 .Typewriter::before {
     content: ' ';
+}
+.fix-right{
+    justify-self: right;
+    color: white;
+}
+.nami{
+
+}
+.nima{
 
 }
