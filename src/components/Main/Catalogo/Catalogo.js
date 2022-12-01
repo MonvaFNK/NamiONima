@@ -1,6 +1,10 @@
 import { Button, Card, ListGroup } from "react-bootstrap";
 
 function Catalogo() {
+    const abrirForm = () => {
+        document.querySelector(".form").style.display = "flex";
+
+    }
     return (
         <div className="catalogo">
             <h2 className="catalogo__titular">Catalogo de precios</h2>
@@ -55,7 +59,16 @@ function Catalogo() {
                         <Card.Text> 8500ARS</Card.Text>
                     </Card.Body>
                 </Card>
+
+
             </div>
+            <button onClick={abrirForm} style={{padding: "1rem",border: "none"}}>
+                    Make your own! ->
+                </button>
+{/*             <div className="catalogo__parrafo">
+                <p className="catalogo__parrafo--texto" onClick={abrirForm}>Podes contactarnos por planes personalizados</p>
+            </div> */}
+
         </div>
     )
 }
