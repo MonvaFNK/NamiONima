@@ -4,7 +4,6 @@ import Portfolio from './Portfolio/Portfolio.js';
 import Catalogo from './Catalogo/Catalogo.js';
 import Contacto from './Contacto/Contacto.js';
 
-
 function Main() {
     return (
         <section className='maincontainer'>
@@ -14,7 +13,6 @@ function Main() {
             <Catalogo />
             <Contacto />
         </section >
-
     )
 }
 export default Main;

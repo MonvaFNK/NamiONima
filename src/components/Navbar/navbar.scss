@@ -1,20 +1,27 @@
 ul li {
     list-style-type: none;
 }
-a, a:visited, a:hover, a:active {
+
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
     text-decoration: none;
 }
-.sticky{
+
+.sticky {
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 9;
 }
-.sticky + .maincontainer {
+
+.sticky+.maincontainer {
     padding-top: 7.3vh;
 }
-.navbar{
+
+.navbar {
     display: flex;
     flex-direction: row;
     background-color: beige;
@@ -22,7 +29,8 @@ a, a:visited, a:hover, a:active {
     min-height: 10vh;
     max-height: 10vh;
     align-items: center;
-    &__texto--titular1{
+
+    &__texto--titular1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -34,19 +42,22 @@ a, a:visited, a:hover, a:active {
         height: 100%;
         width: 100%;
         padding: 0;
-        margin:0;
+        margin: 0;
 
     }
-    &__texto--titular2{
+
+    &__texto--titular2 {
         font-size: 2.5rem;
         color: #ED1E79;
         font-weight: 600;
         height: 100%;
     }
-    &__texto--marca{
+
+    &__texto--marca {
         height: 100%;
         width: 100%;
-        &_svg{
+
+        &_svg {
             width: 3rem;
             height: 3rem;
             margin-left: .5rem;
@@ -54,7 +65,8 @@ a, a:visited, a:hover, a:active {
             object-fit: fill;
         }
     }
-    &__container{
+
+    &__container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,16 +76,17 @@ a, a:visited, a:hover, a:active {
         min-height: 60px;
         max-height: 60px;
         padding: 0;
-        &--logo{
+
+        &--logo {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-content: center;
-            width: 100%;
             height: 100%;
             margin-right: 10vw;
             margin-left: 1rem;
         }
+
         &--sections {
             height: 100%;
             width: 100%;
@@ -83,7 +96,8 @@ a, a:visited, a:hover, a:active {
             color: white;
             margin: 0;
             padding: 0;
-            &_texto{
+
+            &_texto {
                 display: flex;
                 text-align: center;
                 justify-content: center;
@@ -92,12 +106,69 @@ a, a:visited, a:hover, a:active {
                 height: 100%;
                 width: 100%;
             }
+
+            &_container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                position: relative;
+            }
+
+            &_highlight {
+                position: absolute;
+                background: rgb(0, 255, 255);
+                background: -moz-linear-gradient(90deg, rgba(0, 255, 255, 1) 23%, rgba(237, 30, 121, 1) 75%);
+                background: -webkit-linear-gradient(90deg, rgba(0, 255, 255, 1) 23%, rgba(237, 30, 121, 1) 75%);
+                background: linear-gradient(90deg, rgba(0, 255, 255, 1) 23%, rgba(237, 30, 121, 1) 75%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffff", endColorstr="#ed1e79", GradientType=1);
+                width: 11%;
+                height: 2px;
+                bottom: 0;
+                transition: all 1s ease-in-out;
+            }
         }
     }
+
     /* Boton de Menu Hamburguesa */
-/*     &__button{
+    /*     &__button{
         position: absolute;
         right: 5px;
         z-index: 2000;
     } */
+}
+
+.highlighted {
+    box-shadow: red 0px 0px 20px 20px;
+}
+
+.stage-1 {
+    transform: translateX(40%);
+
+}
+
+.stage-2 {
+    transform: translateX(225%);
+}
+
+.stage-3 {
+    transform: translateX(405%);
+}
+
+.stage-4 {
+    transform: translateX(590%);
+}
+
+.stage-5 {
+    transform: translateX(770%);
+}
+
+.scrollSpy {
+    width: 100%;
+    display: flex;
+}
+
+.cosa1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }

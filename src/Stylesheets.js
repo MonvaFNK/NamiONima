@@ -8,6 +8,7 @@ import './components/Main/Especiales/especiales.scss'
 import './components/Main/Catalogo/Catalogo.scss';
 import './components/Main/Contacto/Contacto.scss';
 import './components/Form/Form.scss';
+import './components/ScrollToTop/ScrollToTop.scss';
 
 
 import './App.scss';
