@@ -13,7 +13,7 @@ function Especiales() {
     }
 
     return (
-        <div className='especiales'>
+        <div className='especiales' id="especiales">
             <h2> Especiales</h2>
             <div className="especiales__seccion">
                 <div className="especiales__seccion--contenedor especialesImg1">

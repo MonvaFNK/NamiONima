@@ -1,18 +1,20 @@
-import Especiales from './Especiales/Especiales.js';
-import Landing from './Landing/Landing.js';
-import Portfolio from './Portfolio/Portfolio.js';
-import Catalogo from './Catalogo/Catalogo.js';
-import Contacto from './Contacto/Contacto.js';
-
+import Landing from './Landing/Landing';
+import Portfolio from './Portfolio/Portfolio';
+import Especiales from './Especiales/Especiales';
+import Contacto from './Contacto/Contacto';
+import Catalogo from './Catalogo/Catalogo';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
+import FormSection from './../Form/Form';
 function Main() {
     return (
-        <section className='maincontainer'>
+        <div className='appContainer'>
             <Landing />
             <Portfolio />
             <Especiales />
             <Catalogo />
-            <Contacto />
-        </section >
+            <ScrollToTop />
+        </div>
     )
 }
+
 export default Main;

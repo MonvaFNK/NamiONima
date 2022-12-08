@@ -1,17 +1,26 @@
-import Main from './components/Main/Main';
+
 import NavBar from './components/Navbar/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './components/Main/Main';
+import UserId from './components/UserId/UserId';
+import Contacto from './components/Main/Contacto/Contacto';
+import UserInfo from './components/UserId/UserInfo';
 import FormSection from './components/Form/Form';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 
 
 function App() {
   return (
-    <div className='appContainer'>
-      <FormSection />
+    <BrowserRouter>
       <NavBar />
-      <Main />
-      <ScrollToTop />
-    </div>
+      <Routes>
+        <Route path='/' element={<Main />}></Route>
+        <Route path='/User' element={<UserId />}></Route>
+        <Route path='/User/:id' element={<UserInfo />}></Route>
+        <Route path='/crea-tu-plan' element={<FormSection />}></Route>
+      </Routes>
+      <Contacto />
+    </BrowserRouter>
   );
 }
 

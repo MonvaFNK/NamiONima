@@ -1,12 +1,9 @@
 import { Button, Card, ListGroup } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 function Catalogo() {
-    const abrirForm = () => {
-        document.querySelector(".form").style.display = "flex";
-
-    }
     return (
-        <div className="catalogo">
+        <div className="catalogo" id="catalogo">
             <h2 className="catalogo__titular">Catalogo de precios</h2>
             <div className='catalogo__imagenes'>
                 <Card className='card__color card__body  card__removeborder card__textcenter'>
@@ -62,10 +59,12 @@ function Catalogo() {
 
 
             </div>
-            <button onClick={abrirForm} style={{padding: "1rem",border: "none"}}>
-                    Make your own! ->
+            <Link to='/crea-tu-plan' >
+                <button style={{ padding: "1rem", border: "none" }}>
+                    Make your own!
                 </button>
-{/*             <div className="catalogo__parrafo">
+            </Link>
+            {/*             <div className="catalogo__parrafo">
                 <p className="catalogo__parrafo--texto" onClick={abrirForm}>Podes contactarnos por planes personalizados</p>
             </div> */}
 

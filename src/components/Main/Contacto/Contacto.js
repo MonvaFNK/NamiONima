@@ -1,7 +1,7 @@
 
 function Contacto() {
     return (
-        <div className="contacto">
+        <div className="contacto" id="contacto">
             <div className="contacto__contenedor">
                 <ul className="contacto__contenedor--listados">
                     <li>

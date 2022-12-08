@@ -13,7 +13,7 @@ import portfolio_renovamos from "./Utilities/portfolio_marca4_renovamos.png";
 
 function Portfolio() {
     return (
-        <div className='portfolio'>
+        <div className='portfolio' id="portfolio">
             <h2 className='maincontainer__imagenes--titular2'>Trabajos de clientes satisfechos!</h2>
             <div className='portfolio__imagen portfolio__grid'>
 

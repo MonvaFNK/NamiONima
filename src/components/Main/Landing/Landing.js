@@ -1,14 +1,16 @@
 import Marca from './Utilities/Marca.png';
 import Nightsky from './Nightsky/Nightsky.js';
 import Typewriter from 'typewriter-effect';
-
+import { useRef, useState, useLayoutEffect, useEffect } from 'react';
 
 function Landing() {
-
-
-
+    useEffect(() => {
+        const landingHeight = document.getElementById('landing');
+        const height = landingHeight.offsetHeight
+        
+    }, []);
     return (
-        <div className='maincontainer__section' >
+        <div className='maincontainer__section' id='landing'>
             <Nightsky />
             <div className="maincontainer__imagenes--texto">
                 <div className="maincontainer__texto--titular">
@@ -49,7 +51,6 @@ function Landing() {
         </div>
     )
 }
-
 
 
 
