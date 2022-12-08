@@ -10,16 +10,19 @@ function Catalogo() {
                     <Card.Body>
                         <Card.Title>Plan Basico - Mensual</Card.Title>
                     </Card.Body>
-                    <ListGroup className="list-group-flush">
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item>
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes</ListGroup.Item>
+                    <ListGroup className="card__content--inside list-group-flush">
+{/*                         <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item> */}
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes mensuales </ListGroup.Item>
                         <ListGroup.Item className='card__color card__removebg card__removeborder'> Instagram - 3 Publicaciones a la semana</ListGroup.Item>
                         <ListGroup.Item className='card__color card__removebg card__removeborder'> Facebook - 3 Publicaciones a la semana</ListGroup.Item>
-
                     </ListGroup>
                     <Card.Body className='catalogo__imagenes--button'>
                         <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848451e6a401845a769cd708c7"><Button variant="primary">Comprar</Button>{' '}</a>
-                        <Card.Text className="card__text"> <span className="text-tachado">7000</span>6500ARS<span className="text-red"> 5% OFF</span></Card.Text>
+                        <Card.Text className="card__text">
+                            <span className="text-tachado">7000</span>
+                            6500ARS
+                            <span className="text-red"> 5% OFF</span>
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
@@ -28,15 +31,19 @@ function Catalogo() {
                         <Card.Title>Plan Intermedio - Mensual</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item>
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes</ListGroup.Item>
+{/*                         <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item> */}
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes mensuales</ListGroup.Item>
                         <ListGroup.Item className='card__color card__removebg card__removeborder'> Instagram - 3 Publicaciones a la semana</ListGroup.Item>
                         <ListGroup.Item className='card__color card__removebg card__removeborder'> Facebook - 3 Publicaciones a la semana</ListGroup.Item>
-
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'> 2 Videos cortos semanales</ListGroup.Item>
                     </ListGroup>
                     <Card.Body className='catalogo__imagenes--button'>
                         <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848451e64801845a78014808d0"><Button variant="primary">Comprar</Button>{' '} </a>
-                        <Card.Text className="card__text"> <span className="text-tachado">9500</span>8500ARS <span className="text-red"> 10% OFF</span></Card.Text>
+                        <Card.Text className="card__text">
+                            <span className="text-tachado">9500</span>
+                            8500ARS
+                            <span className="text-red"> 10% OFF</span>
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
@@ -45,15 +52,20 @@ function Catalogo() {
                         <Card.Title>Plan Premium - Mensual</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item>
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes</ListGroup.Item>
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'> Instagram - 3 Publicaciones a la semana</ListGroup.Item>
-                        <ListGroup.Item className='card__color card__removebg card__removeborder'> Facebook - 3 Publicaciones a la semana</ListGroup.Item>
-
+{/*                         <ListGroup.Item className='card__color card__removebg card__removeborder'>Creacion de cuentas</ListGroup.Item> */}
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'>Reportes mensuales</ListGroup.Item>
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'> Instagram - 5 Publicaciones a la semana</ListGroup.Item>
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'> Facebook - 5 Publicaciones a la semana</ListGroup.Item>
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'> 2 Videos cortos semanales</ListGroup.Item>
+                        <ListGroup.Item className='card__color card__removebg card__removeborder'> Respuestas a mensajes en redes</ListGroup.Item>
                     </ListGroup>
                     <Card.Body className='catalogo__imagenes--button'>
                         <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084845a41c001845a7c6981001f"> <Button variant="primary">Comprar</Button>{' '}</a>
-                        <Card.Text className="card__text"> <span className="text-tachado">13500</span>11000ARS <span className="text-red"> 20% OFF</span></Card.Text>
+                        <Card.Text className="card__text">
+                            <span className="text-tachado">13500</span>
+                            11000ARS
+                            <span className="text-red"> 20% OFF</span>
+                        </Card.Text>
                     </Card.Body>
                 </Card>
 
