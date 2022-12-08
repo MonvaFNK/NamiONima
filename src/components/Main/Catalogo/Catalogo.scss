@@ -61,6 +61,7 @@
 }
 
 .card{
+    position: relative;
     width: 20vw;
     max-width: 30%;
     transition: .5s all ease;
@@ -71,7 +72,6 @@
     &__body{
         border-radius: 1.5rem;
         height: 50vh;
-
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
@@ -84,8 +84,32 @@
     &__textcenter {
         text-align: center;
     }
+    &__text{
+        font-size: 1.5rem;
+    }
 }
-
+.text-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ed1972;
+    border: 1px solid black;
+    padding: .3rem;
+    border-radius: 1rem;
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    top: 90%;
+    right: 5%;
+}
+.text-tachado{ 
+    color: gray;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    position: absolute;
+    transform: translate(-10%,-55%);
+}
 
 .card:hover {
     z-index: 0;
