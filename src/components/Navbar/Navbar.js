@@ -5,27 +5,36 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+    const threshold = 100
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            const navbarContainer = document.querySelector(".navbar__container--sections_highlight");
-            if (window.scrollY < 700) {
-                navbarContainer.classList.add('stage-1');
-                navbarContainer.classList.remove('stage-2');
-            } else if (window.scrollY < 1400) {
-                navbarContainer.classList.add('stage-2');
-                navbarContainer.classList.remove('stage-1');
-                navbarContainer.classList.remove('stage-3');
-            } else if (window.scrollY < 1800) {
-                navbarContainer.classList.add('stage-3');
-                navbarContainer.classList.remove('stage-2');
-                navbarContainer.classList.remove('stage-4');
-            } else if (window.scrollY < 2800) {
-                navbarContainer.classList.add('stage-4');
-                navbarContainer.classList.remove('stage-3');
-                navbarContainer.classList.remove('stage-5');
-            } else {
-                navbarContainer.classList.add('stage-5');
-                navbarContainer.classList.remove('stage-4');
+        window.addEventListener('scroll', () => {
+            const navbarContainer = document.querySelector('.navbar__container--sections_highlight');
+
+            const mainChildrenRects = [];
+            const mainChildren = document.querySelectorAll('.appContainer > *');
+            mainChildren.forEach((child) => {
+                mainChildrenRects.push(child.getBoundingClientRect());
+            });
+
+            console.log(mainChildrenRects)
+            if (mainChildrenRects[0].bottom >= 100) {
+                navbarContainer.classList.toggle('stage-1', true);
+                navbarContainer.classList.toggle('stage-2', false);
+            } else if (mainChildrenRects[1].bottom >= 100) {
+                navbarContainer.classList.toggle('stage-1', false);
+                navbarContainer.classList.toggle('stage-2', true);
+                navbarContainer.classList.toggle('stage-3', false);
+            } else if (mainChildrenRects[2].bottom >= 100) {
+                navbarContainer.classList.toggle('stage-2', false);
+                navbarContainer.classList.toggle('stage-3', true);
+                navbarContainer.classList.toggle('stage-4', false);
+            } else if (mainChildrenRects[3].bottom >= 500) {
+                navbarContainer.classList.toggle('stage-3', false);
+                navbarContainer.classList.toggle('stage-4', true);
+                navbarContainer.classList.toggle('stage-5', false);
+            } else  {
+                navbarContainer.classList.toggle('stage-5', true);
+                navbarContainer.classList.toggle('stage-4', false);
             }
         });
     }, []);

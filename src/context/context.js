@@ -1,7 +1,7 @@
-/* import { createContext } from "react";
+/* import React,{ createContext } from "react";
 
-export default HeightContext
+export default NavbarContext
 
-const HeightContext = createContext();
+const NavbarContext = createContext();
 
  */
