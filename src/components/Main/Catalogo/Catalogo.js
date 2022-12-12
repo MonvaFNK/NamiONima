@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Catalogo() {
     return (
         <div className="catalogo" id="catalogo">
-            <h2 className="catalogo__titular">Catalogo de precios</h2>
+            <h2 className="catalogo__titular">Combos mensuales de manejo de redes</h2>
             <div className='catalogo__imagenes'>
                 <Card className='card__color card__body  card__removeborder card__textcenter'>
                     <Card.Body>
@@ -71,11 +71,11 @@ function Catalogo() {
 
 
             </div>
-            <Link to='/crea-tu-plan' >
+{/*             <Link to='/crea-tu-plan' >
                 <button style={{ padding: "1rem", border: "none" }}>
                     Make your own!
                 </button>
-            </Link>
+            </Link> */}
             {/*             <div className="catalogo__parrafo">
                 <p className="catalogo__parrafo--texto" onClick={abrirForm}>Podes contactarnos por planes personalizados</p>
             </div> */}

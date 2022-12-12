@@ -2,16 +2,19 @@ import { Form } from "react-bootstrap";
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton.js';
 
 function UserId() {
     const navigate = useNavigate();
     useEffect(() => {
+        window.scrollTo(0, 0);
         let userIdButton = document.querySelector('#userIdButton')
         userIdButton.addEventListener('click', () => {
             let valor = document.querySelector('.userId__form--input').value
             navigate(`/User/${valor}`)
         })
     })
+
 
     return (
         <div className="userId">
@@ -25,6 +28,7 @@ function UserId() {
                 </Form.Group>
                 <Button id='userIdButton'>Buscar</Button>
             </Form>
+            <ScrollToTopButton/>
         </div>
     )
 }

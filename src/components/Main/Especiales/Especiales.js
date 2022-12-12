@@ -14,7 +14,7 @@ function Especiales() {
 
     return (
         <div className='especiales' id="especiales">
-            <h2> Especiales</h2>
+            <h2 className='especiales__titular'> Tambien ofrecemos</h2>
             <div className="especiales__seccion">
                 <div className="especiales__seccion--contenedor especialesImg1">
                     <div className='especiales__seccion--cartas'>

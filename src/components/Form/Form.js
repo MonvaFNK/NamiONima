@@ -1,7 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useEffect } from 'react';
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton.js';
 
 function FormSection() {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    })
+
     const enviarForm = () => {
         alert('Gracias, se le contactara pronto');
         document.querySelector('.form').style.display = "none";
@@ -51,6 +57,7 @@ function FormSection() {
                     Enviar
                 </Button>
             </Form>
+            <ScrollToTopButton/>
         </div>
     )
 }

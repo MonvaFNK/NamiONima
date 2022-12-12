@@ -3,9 +3,9 @@ import Marca from './Utilities/Marca.png'
 import { useEffect } from 'react';
 import React from "react";
 import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
-    const threshold = 100
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const navbarContainer = document.querySelector('.navbar__container--sections_highlight');
@@ -15,24 +15,34 @@ function Navbar() {
             mainChildren.forEach((child) => {
                 mainChildrenRects.push(child.getBoundingClientRect());
             });
-
-            console.log(mainChildrenRects)
-            if (mainChildrenRects[0].bottom >= 100) {
+            if (mainChildrenRects[0].bottom >= 200) {
                 navbarContainer.classList.toggle('stage-1', true);
                 navbarContainer.classList.toggle('stage-2', false);
-            } else if (mainChildrenRects[1].bottom >= 100) {
+                navbarContainer.classList.toggle('stage-3', false);
+                navbarContainer.classList.toggle('stage-4', false);
+                navbarContainer.classList.toggle('stage-5', false);
+            } else if (mainChildrenRects[1].bottom >= 200) {
                 navbarContainer.classList.toggle('stage-1', false);
                 navbarContainer.classList.toggle('stage-2', true);
                 navbarContainer.classList.toggle('stage-3', false);
-            } else if (mainChildrenRects[2].bottom >= 100) {
+                navbarContainer.classList.toggle('stage-4', false);
+                navbarContainer.classList.toggle('stage-5', false);
+            } else if (mainChildrenRects[2].bottom >= 200) {
+                navbarContainer.classList.toggle('stage-1', false);
                 navbarContainer.classList.toggle('stage-2', false);
                 navbarContainer.classList.toggle('stage-3', true);
                 navbarContainer.classList.toggle('stage-4', false);
+                navbarContainer.classList.toggle('stage-5', false);
             } else if (mainChildrenRects[3].bottom >= 500) {
+                navbarContainer.classList.toggle('stage-1', false);
+                navbarContainer.classList.toggle('stage-2', false);
                 navbarContainer.classList.toggle('stage-3', false);
                 navbarContainer.classList.toggle('stage-4', true);
                 navbarContainer.classList.toggle('stage-5', false);
             } else  {
+                navbarContainer.classList.toggle('stage-1', false);
+                navbarContainer.classList.toggle('stage-2', false);
+                navbarContainer.classList.toggle('stage-3', false);
                 navbarContainer.classList.toggle('stage-5', true);
                 navbarContainer.classList.toggle('stage-4', false);
             }
@@ -52,13 +62,13 @@ function Navbar() {
                     </Link>
                     <div className='navbar__container--sections_container'>
                         <div className='navbar__container--sections_highlight stage-1'></div>
-                        <div className='navbar__container--sections_texto'> <li id='navbar__element0' >Home</li></div>
-                        <div className='navbar__container--sections_texto'> <li id='navbar__element1' >Portfolio</li></div>
-                        <div className='navbar__container--sections_texto'> <li id='navbar__element2' >Especiales</li></div>
-                        <div className='navbar__container--sections_texto'> <li id='navbar__element3' >Catalogo</li></div>
-                        <div className='navbar__container--sections_texto'> <li id='navbar__element4' >Contacto</li></div>
+                        <div className='navbar__container--sections_texto'> <HashLink to='/#landing'><li id='navbar__element0' >Inicio</li></HashLink></div>
+                        <div className='navbar__container--sections_texto'> <HashLink to='/#portfolio'><li id='navbar__element1' >Nuestro Trabajo</li></HashLink></div>
+                        <div className='navbar__container--sections_texto'> <HashLink to='/#especiales'><li id='navbar__element2' >Servicios</li></HashLink></div>
+                        <div className='navbar__container--sections_texto'> <HashLink to='/#catalogo'><li id='navbar__element3' >Ofertas</li></HashLink></div>
+                        <div className='navbar__container--sections_texto'> <HashLink to='/#contacto'><li id='navbar__element4' >Contacto</li></HashLink></div>
                     </div>
-                    <Link to='/User'> <li>Tu Compra</li></Link>
+{/*                     <Link to='/User'> <li>Tu Compra</li></Link> */}
                 </ul>
             </nav>
         </div>

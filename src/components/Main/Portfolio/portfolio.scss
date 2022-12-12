@@ -1,9 +1,9 @@
-:root{
+:root {
     --marca1: pink;
     --marca1-lighter: rgb(255, 236, 239);
     --marca1-fade: rgba(255, 192, 203, 0.5);
     --marca2: rgba(255, 255, 0, 0.685);
-    --marca2-lighter: rgba(255, 255, 166, 0.685); 
+    --marca2-lighter: rgba(255, 255, 166, 0.685);
     --marca2-fade: rgba(255, 255, 0, 0.295);
     --marca3: rgba(0, 0, 255, 0.822);
     --marca3-lighter: rgb(106, 106, 248);
@@ -11,226 +11,258 @@
     --marca4: rgb(128, 0, 128);
     --marca4-lighter: rgb(182, 83, 182);
     --marca4-fade: rgba(128, 0, 128, 0.336);
-    --card-fade-global:rgba(0, 0, 0, 0.705);
+    --card-fade-global: rgba(0, 0, 0, 0.705);
 }
-.portfolio__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 6rem;
-    grid-row-gap: 3rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 
-    &--flex {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-    &--texto{
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-    }
-    div:hover > &--texto{
-        opacity: 1;
-        transition: all 2s ease;
-    }
-/* Marca1 */
-&--container1:hover  &--textcontainer1 {
+.portfolio {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(237, 30, 121);
+    background: -moz-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, #00ffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed1e79", endColorstr="#00ffff", GradientType=1);
     width: 100%;
-    opacity: 1;
-    bottom: 0;
-    left: 0;
-}
-    &--textcontainer1 {
-        width: 0%;
-        height: 0%;
-        background-color: var(--card-fade-global);
-        position: absolute;
-        border-radius: 1rem;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s ease;
-        opacity: 0;
-        bottom: 50%;
-        left: 50%;
-        cursor: pointer;
+    &__titular {
+        padding: 6rem 0 6rem 0;
     }
-    &--container1 {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 1rem;
-        transition: all .3s ease-in-out;
-        overflow: hidden;
-
-    }
-
-    &--container1:hover {
-        transform: scale(1.1);
-        z-index: 5;
-        box-shadow: 0 0 .2rem var(--marca1-lighter),
-        0 0 .2rem var(--marca1),
-        0 0 2rem var(--marca1),
-        0 0 0.8rem var(--marca1),
-        0 0 2.8rem var(--marca1),
-        inset 0 0 1.3rem var(--marca1); 
-    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 6rem;
+        grid-row-gap: 3rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        &--textcontainer1 {
+            width: 0%;
+            height: 0%;
+            background-color: var(--card-fade-global);
+            position: absolute;
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            bottom: 50%;
+            left: 50%;
+            cursor: pointer;
+        }
     
-/* Marca2 */
-&--textcontainer2 {
-    width: 0%;
-    height: 0%;
-    background-color: var(--card-fade-global);
-    position: absolute;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    opacity: 0;
-    bottom: 50%;
-    left: 50%;
-    cursor: pointer;
-}
-&--container2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    border-radius: 1rem;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-&--container2:hover  &--textcontainer2 {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    bottom: 0;
-    left: 0;
-}
-&--container2:hover {
-    transform: scale(1.1);
-    z-index: 5;
-    box-shadow: 0 0 .2rem var(--marca2-lighter),
-    0 0 .2rem var(--marca2),
-    0 0 2rem var(--marca2),
-    0 0 0.8rem var(--marca2),
-    0 0 2.8rem var(--marca2),
-    inset 0 0 1.3rem var(--marca2); 
-}
-/* Marca3 */
-&--textcontainer3 {
-    width: 0%;
-    height: 0%;
-    background-color: var(--card-fade-global);
-    position: absolute;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    opacity: 0;
-    bottom: 50%;
-    left: 50%;
-    cursor: pointer;
-}
-&--container3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    border-radius: 1rem;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
+        &--container1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
     
-}
-&--container3:hover  &--textcontainer3{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    bottom: 0;
-    left: 0;
+        }
+    
+        &--container1:hover {
+            transform: scale(1.1);
+            z-index: 5;
+            box-shadow: 0 0 .2rem var(--marca1-lighter),
+                0 0 .2rem var(--marca1),
+                0 0 2rem var(--marca1),
+                0 0 0.8rem var(--marca1),
+                0 0 2.8rem var(--marca1),
+                inset 0 0 1.3rem var(--marca1);
+        }
+    
+        /* Marca2 */
+        &--textcontainer2 {
+            width: 0%;
+            height: 0%;
+            background-color: var(--card-fade-global);
+            position: absolute;
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            bottom: 50%;
+            left: 50%;
+            cursor: pointer;
+        }
+    
+        &--container2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+        }
+    
+        &--container2:hover &--textcontainer2 {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &--container2:hover {
+            transform: scale(1.1);
+            z-index: 5;
+            box-shadow: 0 0 .2rem var(--marca2-lighter),
+                0 0 .2rem var(--marca2),
+                0 0 2rem var(--marca2),
+                0 0 0.8rem var(--marca2),
+                0 0 2.8rem var(--marca2),
+                inset 0 0 1.3rem var(--marca2);
+        }
+    
+        /* Marca3 */
+        &--textcontainer3 {
+            width: 0%;
+            height: 0%;
+            background-color: var(--card-fade-global);
+            position: absolute;
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            bottom: 50%;
+            left: 50%;
+            cursor: pointer;
+        }
+    
+        &--container3 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+    
+        }
+    
+        &--container3:hover &--textcontainer3 {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            bottom: 0;
+            left: 0;
+    
+        }
+    
+        &--container3:hover {
+            transform: scale(1.1);
+            z-index: 5;
+            box-shadow: 0 0 .2rem var(--marca3-lighter),
+                0 0 .2rem var(--marca3),
+                0 0 2rem var(--marca3),
+                0 0 0.8rem var(--marca3),
+                0 0 2.8rem var(--marca3),
+                inset 0 0 1.3rem var(--marca3);
+        }
+    
+        /* Marca4 */
+        &--textcontainer4 {
+            width: 0%;
+            height: 0%;
+            background-color: var(--card-fade-global);
+            position: absolute;
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            bottom: 50%;
+            left: 50%;
+            cursor: pointer;
+        }
+    
+        &--container4 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+        }
+    
+        &--container4:hover &--textcontainer4 {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &--container4:hover {
+            transform: scale(1.1);
+            z-index: 5;
+            box-shadow: 0 0 .2rem var(--marca4-lighter),
+                0 0 .2rem var(--marca4),
+                0 0 2rem var(--marca4),
+                0 0 0.8rem var(--marca4),
+                0 0 2.8rem var(--marca4),
+                inset 0 0 1.3rem var(--marca4);
+        }
+    
+    
+        /* END */
+    
+        &--texto {
+            text-align: center;
+            color: white;
+            line-height: 2rem;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-weight: 500;
+        }
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        &--texto {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
 
-}
-&--container3:hover {
-    transform: scale(1.1);
-    z-index: 5;
-    box-shadow: 0 0 .2rem var(--marca3-lighter),
-    0 0 .2rem var(--marca3),
-    0 0 2rem var(--marca3),
-    0 0 0.8rem var(--marca3),
-    0 0 2.8rem var(--marca3),
-    inset 0 0 1.3rem var(--marca3); 
-}
-/* Marca4 */
-&--textcontainer4 {
-    width: 0%;
-    height: 0%;
-    background-color: var(--card-fade-global);
-    position: absolute;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    opacity: 0;
-    bottom: 50%;
-    left: 50%;
-    cursor: pointer;
-}
-&--container4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    border-radius: 1rem;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-&--container4:hover  &--textcontainer4 {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    bottom: 0;
-    left: 0;
-}
-&--container4:hover {
-    transform: scale(1.1);
-    z-index: 5;
-    box-shadow: 0 0 .2rem var(--marca4-lighter),
-    0 0 .2rem var(--marca4),
-    0 0 2rem var(--marca4),
-    0 0 0.8rem var(--marca4),
-    0 0 2.8rem var(--marca4),
-    inset 0 0 1.3rem var(--marca4); 
-}
+        div:hover>&--texto {
+            opacity: 1;
+            transition: all 2s ease;
+        }
 
-
-/* END */
-
-    &--texto {
-        text-align: center;
-        color: white;
-        line-height: 2rem;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        font-weight: 500;
+        /* Marca1 */
+        &--container1:hover &--textcontainer1 {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            bottom: 0;
+            left: 0;
+        }
     }
+
+    
 }
 
 .portfolio__grid--item1 {
@@ -255,16 +287,6 @@
 
 
 /* Settings */
-.portfolio {
-    background: rgb(237, 30, 121);
-    background: -moz-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
-    background: linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, #00ffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed1e79", endColorstr="#00ffff", GradientType=1);
-    width: 100%;
-
-}
-
 .adjust-image {
     max-width: 100%;
     max-height: 100%;
