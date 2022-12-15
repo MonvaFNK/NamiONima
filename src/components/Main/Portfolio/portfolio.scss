@@ -25,9 +25,49 @@
     background: -webkit-linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, rgba(0, 255, 255, 1) 100%);
     background: linear-gradient(0deg, rgba(237, 30, 121, 1) 0%, rgba(190, 75, 148, 1) 7%, rgba(163, 100, 163, 1) 15%, rgba(141, 121, 176, 1) 22%, rgba(132, 129, 181, 1) 28%, #00ffff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed1e79", endColorstr="#00ffff", GradientType=1);
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
+    &__text-color{
+        color: white;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        max-width: 100%;
+        gap: 2rem;
+        padding: 0 2rem 0 2rem;
+    }
+    &__carousel{
+        border-radius: 1rem;
+        margin: 1rem 0 2rem 0;
+        width: 30vw;
+        max-height: 56vh;
+        overflow: hidden;
+        cursor: pointer;
+        transition: box-shadow .3s ease-in-out;
+        &--img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit:contain;
+        }
+    &:hover {
+        box-shadow: 0 0 .3rem #23DFF0,
+        0 0 .3rem #23DFF0,
+        0 0 .3rem #23DFF0,
+        0 0 0.3rem #23DFF0,
+        0 0 .3rem #23DFF0,
+        inset 0 0 .3rem #23DFF0;
+    }
+    }
     &__titular {
         padding: 6rem 0 6rem 0;
+        font-size: 2.5rem;
+        color: white;
+        text-shadow: -2px 2px 5px black;
     }
     &__grid {
         display: grid;
@@ -168,11 +208,11 @@
             transform: scale(1.1);
             z-index: 5;
             box-shadow: 0 0 .2rem var(--marca3-lighter),
-                0 0 .2rem var(--marca3),
-                0 0 2rem var(--marca3),
-                0 0 0.8rem var(--marca3),
-                0 0 2.8rem var(--marca3),
-                inset 0 0 1.3rem var(--marca3);
+                0 0 .2rem white,
+                0 0 2rem white,
+                0 0 0.8rem white,
+                0 0 2.8rem white,
+                inset 0 0 1.3rem white;
         }
     
         /* Marca4 */
@@ -292,4 +332,14 @@
     max-height: 100%;
     border-radius: 1rem;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio__container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .portfolio__carousel{
+        width: 50vw;
+    }
 }

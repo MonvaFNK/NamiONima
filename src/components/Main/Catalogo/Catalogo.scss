@@ -12,7 +12,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ed1e79",GradientType=1);
     &__titular{
         padding: 6rem 0 6rem 0;
+        font-size: 2.5rem;
         color: white;
+        text-shadow: -2px 2px 5px black;
     }
     &__imagenes {
         margin-top: 2rem;

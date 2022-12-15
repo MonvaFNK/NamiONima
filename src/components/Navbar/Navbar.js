@@ -43,8 +43,8 @@ function Navbar() {
                 navbarContainer.classList.toggle('stage-1', false);
                 navbarContainer.classList.toggle('stage-2', false);
                 navbarContainer.classList.toggle('stage-3', false);
-                navbarContainer.classList.toggle('stage-5', true);
                 navbarContainer.classList.toggle('stage-4', false);
+                navbarContainer.classList.toggle('stage-5', true);
             }
         });
     }, []);
